@@ -49,7 +49,7 @@ public class LaserLineRenderer : MonoBehaviour
                     lineRenderer.positionCount += 1;
                     lineRenderer.SetPosition(lineRenderer.positionCount - 1, hit.point);
                     // Perform interaction logic here
-                    // Example: hit.collider.GetComponent<SomeInteractionScript>().DoSomething();
+                    hit.collider.GetComponent<LaserObjectInteract>().LaserInteract();
                     break;
                 }
             }

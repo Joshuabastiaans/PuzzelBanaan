@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class LaserInteract : MonoBehaviour
+public class LaserPlayerInteract : MonoBehaviour
 {
     private LaserController laserController;
     [SerializeField] private float inputRotationSpeed = 100f;
